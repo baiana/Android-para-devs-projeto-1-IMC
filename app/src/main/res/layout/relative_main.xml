@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/titleTXT"
+        android:layout_alignParentTop="true "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Calculadora IMC"
+        android:textColor="@color/colorText"
+        android:textSize="34sp" />
+
+
+    <EditText
+        android:id="@+id/weightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="seu peso (kg)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText" />
+
+    <EditText
+        android:id="@+id/heightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="sua altura (m)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="#D2D6E9" />
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/useMetricCB"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        android:fontFamily="@font/montserrat"-->
+    <!--        android:text="Use Metric BMI formula\n(meters and kilos)"-->
+    <!--        android:textColor="@color/text_color"-->
+    <!--        android:textSize="16sp" />-->
+
+
+    <Button
+        android:id="@+id/calculateBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="24dp"
+        android:text="Calcular!"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="22sp" />
+
+</RelativeLayout>
