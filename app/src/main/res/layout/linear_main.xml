@@ -17,12 +17,7 @@
         android:fontFamily="@font/montserrat"
         android:text="Calculadora IMC"
         android:textColor="@color/colorText"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        android:textSize="34sp" />
 
 
     <EditText
@@ -51,10 +46,7 @@
         android:padding="18dp"
         android:textAlignment="center"
         android:textColor="@color/colorText"
-        android:textColorHint="#D2D6E9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightEDTX" />
+        android:textColorHint="#D2D6E9" />
 
     <!--    <CheckBox-->
     <!--        android:id="@+id/useMetricCB"-->
@@ -79,7 +71,5 @@
         android:text="Calcular!"
         android:textAllCaps="false"
         android:textColor="@color/colorTextButton"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textSize="22sp" />
 </LinearLayout>
