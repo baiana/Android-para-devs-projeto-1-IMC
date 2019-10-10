@@ -1,8 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark">
+
+
+    <TextView
+        android:id="@+id/titleTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Calculadora IMC"
+        android:textColor="@color/colorText"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/heightEDTX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightEDTX"
+        android:layout_alignStart="@id/heightEDTX"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="seu peso (kg)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/calculateBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightEDTX" />
+
+    <EditText
+        android:id="@+id/heightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="sua altura (m)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="#D2D6E9"
+        app:layout_constraintBottom_toTopOf="@+id/weightEDTX"
+        app:layout_constraintEnd_toEndOf="@+id/weightEDTX"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weightEDTX"
+        app:layout_constraintTop_toBottomOf="@+id/titleTXT" />
+
+    <Button
+        android:id="@+id/calculateBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightEDTX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/shape_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="24dp"
+        android:text="Calcular!"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/heightEDTX"
+        app:layout_constraintStart_toStartOf="@+id/heightEDTX"
+        app:layout_constraintTop_toBottomOf="@id/weightEDTX" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
