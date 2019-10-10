@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/titleTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Calculadora IMC"
+        android:textColor="@color/colorText"
+        android:textSize="34sp" />
+
+
+    <EditText
+        android:id="@+id/weightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightEDTX"
+        android:layout_alignStart="@id/heightEDTX"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="seu peso (kg)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText" />
+
+    <EditText
+        android:id="@+id/heightEDTX"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/montserrat"
+        android:hint="sua altura (m)"
+        android:inputType="numberDecimal"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textColorHint="#D2D6E9" />
+
+    <Button
+        android:id="@+id/calculateBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightEDTX"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="24dp"
+        android:text="Calcular!"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="22sp" />
+</RelativeLayout>

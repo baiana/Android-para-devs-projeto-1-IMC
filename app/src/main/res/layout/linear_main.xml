@@ -51,10 +51,7 @@
         android:padding="18dp"
         android:textAlignment="center"
         android:textColor="@color/colorText"
-        android:textColorHint="#D2D6E9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weightEDTX" />
+        android:textColorHint="#D2D6E9" />
 
     <!--    <CheckBox-->
     <!--        android:id="@+id/useMetricCB"-->
